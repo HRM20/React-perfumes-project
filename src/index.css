@@ -2,11 +2,6 @@
   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   line-height: 1.5;
   font-weight: 400;
-
-  /* color-scheme: light dark; */
-  /* color: rgba(255, 255, 255, 0.87); */
-  /* background-color: #242424; */
-
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -18,9 +13,12 @@
   color: gray;
   text-decoration: inherit;
   font-weight: bold;
+  transition: all 0.3s ease 0.5s; 
+
 }
 a:hover {
   color: #eba563ce;
+  transform: scale(1); 
 }
 
 body {
@@ -36,7 +34,6 @@ h1 {
 }
 
 button {
-  /* border-radius: 8px; */
   border: 2px solid transparent ;
   padding: 0.6em 1.5em;
   font-size: 1em;
@@ -77,17 +74,14 @@ button:focus-visible {
   position: sticky;
   top: 0;
   right: 0;
-  /* background-color: rgb(253, 233, 168); */
   background-color: #1f2d47ec;
   display: flex;
   justify-content: space-around;
-
 }
 .navbar a{
   transition: color 0.5s;
+ 
 } 
-
-
 .inp-box{
   text-align: center; 
   padding: 1rem;
@@ -107,11 +101,6 @@ button:focus-visible {
   font-size: large;
   font-weight: bold;
   color: #fdc984;
-  /* border-bottom: #213547 1px solid;
-  width: 10%;
-  text-align: center;
-  margin: 0 auto;
-  padding: .5rem; */
   font-variant: small-caps;
 }
 .inventory-box a{
@@ -126,9 +115,7 @@ button:focus-visible {
 .box-products{
   display: flex;
   justify-content: space-evenly;
-  /* border: 2px solid #fdc984; */
   background-color: #1f2d47;
-  /* border-radius: 20px; */
   margin: 1rem 15%;
   padding: 2rem;
   gap: 15px;
@@ -144,9 +131,7 @@ button:focus-visible {
 
 .list-detail{
   text-align: right;
-  /* border: 10px double #213547 ; */
   padding: 2.5rem 2rem;
-  /* border-radius: 20px; */
   background-color: #fff;
   color: black;
   list-style-type: none;
@@ -159,7 +144,6 @@ button:focus-visible {
 .about-box{
   margin:  auto 10%;
   text-align: center;
-  /* font-size: large; */
 }
 
 .img-store{
@@ -173,7 +157,6 @@ button:focus-visible {
 }
 
 .about-box h4,h3 {
-  /* font-size: medium; */
   font-weight: bolder;
   color: #ec8f16;
   border-bottom: 1px solid #ec8f16;
@@ -187,3 +170,85 @@ button:focus-visible {
   padding: 5%;
 }
 
+h1{
+  color: #fdc984;
+}
+.footer{
+  width: 100%;
+  background-color: #1f2d47;
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  padding: 2rem;
+  text-align: center;
+}
+.footer-top{
+  display: flex;
+  width: 100%;
+  height: 10rem;
+  text-align: center;
+  justify-content: space-evenly;
+  padding: 0.5rem;
+}
+
+.text-F{
+  display: flex;
+  flex-direction: column;
+}
+
+h4{
+  color: #ec8f16;
+  font-size: 1rem;
+}
+
+.footer-top a {
+  text-decoration: none;
+  color: #fff;
+  padding: .5rem;
+}
+.footer-top a:hover{
+  color: #fdc984;
+  transform: scale(1.1); 
+}
+
+.footer-down{
+  padding: 1.5rem;
+}
+.Home{
+  width: 100%;
+}
+.home-1{
+  width: 50%;
+  text-align: center;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.home-1 img{
+  width: 70%;
+}
+
+.home-2{
+  width: 30%;
+  display: flex;
+  text-align: center;
+  justify-content: end;
+  direction: ltr;
+  margin: 1rem 50%;
+}
+.home-2 img,
+.home-3 img{
+  width: 40%;
+}
+.home-2 div,
+.home-3 div{
+  padding: 1rem;
+}
+
+.home-3{
+  width: 30%;
+  display: flex;
+  text-align: center;
+  justify-content: start;
+  margin: 1rem 30%;
+}
